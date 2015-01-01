@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-bash $1/compile.sh || exit 1
+export BUILDPACK_BUILD_PATH=$1
+export BUILDPACK_CACHE_PATH=$2
+bash $BUILDPACK_BUILD_PATH/compile.sh || exit 1
