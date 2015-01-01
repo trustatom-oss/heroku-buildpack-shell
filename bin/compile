@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-bash $1/compile.sh > $1/compile.log 2>&1 &
+bash $1/compile.sh || exit 1
