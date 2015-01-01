@@ -3,7 +3,7 @@
 BUILD_DIR=$1
 
 # Exit early if app does not contain a shell script to execute
-if [ ! -d $BUILD_DIR/.sh ]; then
+if [ ! -f $BUILD_DIR/compile.sh ]; then
   echo "no" && exit 1
 fi
 
