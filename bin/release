@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-bash $1/release.sh > $1/release.log 2>&1 &
+cat <<EOF
+--- {}
+EOF
